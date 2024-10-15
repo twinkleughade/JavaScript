@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #product {
+        display: flex;
+        justify-content: center;
+      }
+
+      #product #ar1 div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 20px;
+      }
+
+      #product #ar1 div img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+      }
+      #product #ar2 div {
+        width: 400px;
+        height: 480px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 20px;
+      }
+
+      #product #ar2 div img{
+        width: 400px;
+        height: 480px;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+    <section id="product">
+        <article id="ar1">
+              <div><img onmouseenter="change1();" src="https://media1.thrillophilia.com/filestore/uwpz857lua13qmvub6um2v93dlrm_IMG%20Worlds%20%20of%20Adventure.jpg?w=400&dpr=2" alt=""></div>
+            <div><img onmouseenter="change2();" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s" alt=""></div>
+          <div><img onmouseenter="change3();" src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt=""></div>
+          <div><img onmouseenter="change4();" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt=""></div>
+        </article>
+        <article id="ar2">
+            <div id="largeimg"><img src="https://media1.thrillophilia.com/filestore/uwpz857lua13qmvub6um2v93dlrm_IMG%20Worlds%20%20of%20Adventure.jpg?w=400&dpr=2" alt=""></div>
+        </article>
+
+        <script src="product.js"></script>
+    </section>
+</body>
+</html>
