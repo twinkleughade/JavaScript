@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <div class="nav_logo">
+            <p>You And Me Shop</p>
+        </div>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Product</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav_button">
+            <button class="btn white_btn" id="registerbtn" onclick="register()">Sign up</button>
+            <button class="btn" id="loginbtn" onclick="login()">login</button>
+        </div>
+        <div class="nav_menu_btn">
+            <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!-- ===================================form box  ========================== -->
+     <div class="form_box">
+        <!-- -------------------log in  -->
+        <div class="login_container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input_box">
+                    <input type="text" class="input_field" placeholder=" Username or Email">
+                    <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input_box">
+                    <input type="password" class="input_field" placeholder="password">
+                    <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input_box">
+                    <!-- <input type="submit" class="submit"  value="Sign In" > -->
+                     <button>Sign In <a href="register"></a></button>
+            </div>
+            <div class="two_col">
+                <div class="one">
+                    <input type="checkbox" id="login_check">
+                    <label for="login_check">Remember Me</label>
+                </div>
+                <div class="two">
+                        <label><a href="#">| Forgot password?</a></label>
+                </div>
+            </div>                            
+        </div>
+
+        <div class="register_container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two_forms">
+                <div class="input_box">
+                    <input type="text" class="input_field" placeholder="First name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" class="input_field" placeholder="Last name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="input_box">
+                    <input type="text" class="input_field" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input_box">
+                    <input type="password" class="input_field" placeholder="password">
+                    <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input_box">
+                    <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two_col">
+                <div class="one">
+                    <input type="checkbox" id="register_check">
+                    <label for="register_check">Remember Me</label>
+                </div>
+                <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>                            
+        </div>
+
+
+        
+
+     </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
